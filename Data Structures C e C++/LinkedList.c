@@ -8,22 +8,17 @@ typedef struct node {
 struct node *head = NULL;
 
 int main() {
-    Inserir(0,0);
-    Inserir(1,-1);
-    Inserir(2,-1);
-    Inserir(3,-1);
-    Inserir(4,-1);
+    for (int i = 1; i < 50; i++) Insert(i,0);
     Imprimir();
-    while (1) {
-        printf("Inserir: ");
-        int num, pos;
-        scanf(" %d %d", &num, &pos);
-        Inserir(num, pos);
-        Imprimir();
-    }
+    Delete(0);
+    Imprimir();
+    Delete(2);
+    Imprimir();
+    Reverse();
+    Imprimir();
 }
 
-void Inserir(int input, int target_position) {
+void Insert(int input, int target_position) {
     struct node *temp = (struct node*)malloc(sizeof(struct node));
     temp->data = input;
     if (target_position == 0) {
@@ -38,11 +33,7 @@ void Inserir(int input, int target_position) {
     }
     else {
         struct node *editor = head;
-        int count = 0;
-        while (count < target_position-1 && editor->link != NULL) {
-            editor = editor->link;
-            count++;
-        }
+        for (int i = 0; i < target_position-2; i++) if (editor->link != NULL) editor = editor->link;
         struct node *cache = editor;
         editor = editor->link;
         cache->link = temp;
@@ -50,40 +41,55 @@ void Inserir(int input, int target_position) {
     }
 }
 
-void Deletar(int input, int target_position) {
+void Delete(int target_position) {
     struct node *temp = (struct node*)malloc(sizeof(struct node));
-    temp->data = input;
     if (target_position == 0) {
-        temp->link = head;
-        head = temp;
+        temp = head;
+        head = head->link;
+        free(temp);
     }
     else if (target_position == -1) {
         temp->link = NULL;
         struct node *editor = head;
-        while (editor->link != NULL) editor = editor->link;
-        editor->link = temp;
+        while (editor->link->link != NULL) editor = editor->link;
+        struct node *cache = editor;
+        editor = editor->link;
+        cache->link = NULL;
+        free(editor);
     }
     else {
         struct node *editor = head;
-        int count = 0;
-        while (count < target_position-1 && editor->link != NULL) {
-            editor = editor->link;
-            count++;
+        for (int i = 0; i < target_position-1; i++) {
+            if (editor->link != NULL) editor = editor->link;
+            else break;
         }
         struct node *cache = editor;
         editor = editor->link;
-        cache->link = temp;
-        temp->link = editor;
+        cache->link = editor->link;
+        free(editor);
     }
+}
+
+void Reverse() {
+    struct node *temp = head, *temp2 = NULL, *temp3;
+    while(temp->link != NULL) {
+        temp3 = temp2;
+        temp2 = temp;
+        temp = temp->link;
+        temp2->link = temp3;
+    }
+    temp2->link = temp3;
+    temp->link = temp2;
+    head = temp;
 }
 
 void Imprimir() {
+    printf("\n");
     struct node *ponteiro = NULL;
     ponteiro = head;
     while(1) {
+        if (ponteiro == NULL) break;
         printf("%d ", ponteiro->data);
-        if (ponteiro->link == NULL) break;
         ponteiro = ponteiro->link;
     }
-    printf("\n");
 }
