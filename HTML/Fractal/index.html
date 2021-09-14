@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" height="1024px" width="1024px" style="margin: -8px;">
+</body>
+    <script src='perlin.js'></script>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        setInterval(gerar, 500);
+        offset = 0;
+        function gerar() {
+            offset += 50;
+            for (y = 0; y < 1024; y++)
+                for (x = 0; x < 1024; x++) {
+                    octave1 = noise.perlin2((x + offset)/50,  (y )/  50)*256;
+                    octave2 = noise.perlin2((x + offset)/125, (y )/ 125)*256;
+                    octave3 = noise.perlin2((x + offset)/200, (y )/ 200)*256;
+                    octave4 = noise.perlin2((x + offset)/500, (y )/ 500)*256;
+                    //value = ((512-x)**2 + (512-y)**2)**(1/2)-128;
+
+                    result = (((octave1*1)+(octave2*2)+(octave3*4)+(octave4*8))/16)+150;
+
+                    if      (result > 240) ctx.fillStyle = "white";
+                    else if (result > 150) ctx.fillStyle = "grey";
+                    else if (result > 130) ctx.fillStyle = "dark grey";
+                    else if (result >  80) ctx.fillStyle = "green";
+                    else if (result >  40) ctx.fillStyle = "blue";
+                    else                   ctx.fillStyle = "dark blue";
+                    ctx.fillRect(y, x, y+1, x+1);
+                }
+        }
+    
+    </script>
+</html>
