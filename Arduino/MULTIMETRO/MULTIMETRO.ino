@@ -8,8 +8,8 @@ void loop() {
   int check = digitalRead(3);
   if (check != cache) 
   {
-    if (!check) digitalWrite(13, HIGH);
-    if (check) digitalWrite(13, LOW);
+    if (!check) digitalWrite(30, HIGH);
+    if (check) digitalWrite(30, LOW);
     cache = check;  
   }
 }
