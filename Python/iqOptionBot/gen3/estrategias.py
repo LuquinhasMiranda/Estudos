@@ -1,46 +1,3 @@
-from iqoptionapi.stable_api import IQ_Option
-
-def get_odds(velas):
-    lista =  [odds_c9(velas)]
-    lista += [odds_tabelado(velas)]
-    lista += [odds_milhao(velas)]
-    return lista
-
-def print_odds(odds):
-    for odd in odds:
-        # NOME
-        nome = '\033[95m' + odd[0] + ': \033[0m'
-
-        # PORCENTAGEM DE ACERTO DA ESTRATEGIA
-        porcentagem = ''
-        if odd[2] > .9:
-            porcentagem += '\033[96m'
-        elif odd[2] > .8:
-            porcentagem += '\033[92m'
-        elif odd[2] > .7:
-            porcentagem += '\033[93m'
-        else:
-            porcentagem += '\033[91m'
-        porcentagem += str(round(odd[2]*100,1)) + '\033[95m% '
-
-        # NEXT TARGET
-        target = ' Target:'
-        if odd[8] == 'H':
-            target += '\033[92m'
-        elif odd[8] == 'L':
-            target += '\033[91m'
-        target += str(odd[8])
-        target += '\033[0m'
-
-        print(nome + porcentagem + target)
-    print('')
-
-def apply_odds():
-    TOLERANCIA = .9
-    
-
-
-
 def odds_c9(velas): 
     start = False
     Hs = 0
@@ -278,8 +235,8 @@ def odds_milhao(velas):
 
     return calc_odds("Milhao", gale0, gale1, gale2, loss, holds, TargetDirection)
 
-
 def calc_odds(string, gale0, gale1, gale2, loss, holds, target):
+    # CALCULA O RETORNO DAS ESTRATEGIAS ACIMA
     acertos = gale0+gale1+gale2
     entradas = acertos + loss
     total = entradas + holds

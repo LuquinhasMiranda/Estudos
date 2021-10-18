@@ -1,12 +1,30 @@
-from iqoptionapi.stable_api import IQ_Option
+from datetime import datetime   
 
-def get_odds(velas):
+#### CALCULO DE ODDS ####
+def get_odds(api_velas):
+    # RETORNA ODDS DAS ESTRATEGIAS EM 1 ATIVO
+    velas = []
+    for vela in api_velas:  
+
+        # CALCULA DIRECAO DA VELA
+        direcao_vela = ''
+        if vela['open']<vela['close']:
+            direcao_vela ='H'
+        elif vela['open']==vela['close']:
+            direcao_vela ='N'
+        else:
+            direcao_vela = 'L'
+        velas += [[direcao_vela, datetime.fromtimestamp(vela['from']).strftime('%H:%M')]]
+    
+    # LISTA AS ODDS DAS ESTRATEGIAS
     lista =  [odds_c9(velas)]
     lista += [odds_tabelado(velas)]
     lista += [odds_milhao(velas)]
+    
     return lista
 
 def print_odds(odds):
+    # IMPRIME ODDS DE 1 ATIVO
     for odd in odds:
         # NOME
         nome = '\033[95m' + odd[0] + ': \033[0m'
@@ -35,12 +53,36 @@ def print_odds(odds):
         print(nome + porcentagem + target)
     print('')
 
-def apply_odds():
-    TOLERANCIA = .9
-    
+def get_odds_from_ativos(lista_api_velas):
+    lista_odds_ativos = []
+    for api_velas in lista_api_velas:
+        odds = get_odds(api_velas)
+        lista_odds_ativos += odds
+        print_odds(odds)
+
+#### CALCULO DE TARGET ####
+def aplicar_estrategias_nos_ativos(lista_api_velas):
+    lista_odds_ativos = get_odds_from_ativos(lista_api_velas)
+    for lista_odds in lista_odds_ativos:# PARA CADA ATIVO NA LISTA
+        H = 0
+        L = 0
+        TOTAL = 0
+        for odds in lista_odds:# PARA CADA ESTRATEGIA NO ATIVO
+            if odds[2] > .85:
+                if odds[8] == 'H':
+                    H += odds[2]
+                    TOTAL += 1
+                elif odds[8] == 'L':
+                    L += odds[2]
+                    TOTAL += 1
+        if H/TOTAL > .85:
+            print('ENTRAR NO H')
+        elif L/TOTAL > .85:
+            print('ENTRAR NO L')
+        
 
 
-
+#### ESTRATEGIAS ####
 def odds_c9(velas): 
     start = False
     Hs = 0
@@ -278,8 +320,8 @@ def odds_milhao(velas):
 
     return calc_odds("Milhao", gale0, gale1, gale2, loss, holds, TargetDirection)
 
-
 def calc_odds(string, gale0, gale1, gale2, loss, holds, target):
+    # CALCULA O RETORNO DAS ESTRATEGIAS ACIMA
     acertos = gale0+gale1+gale2
     entradas = acertos + loss
     total = entradas + holds

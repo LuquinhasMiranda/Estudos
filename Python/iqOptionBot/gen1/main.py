@@ -2,6 +2,25 @@ from datetime import datetime
 from iqoptionapi.stable_api import IQ_Option
 import estrategias
 
+### FUNCOES NECESSARIAS PARA CALCULOS NA MAIN.PY ###
+def direcao_vela(o, c):
+    if o<c:
+        return 'H'
+    elif o==c:
+        return 'N'
+    else:
+        return 'L'
+
+def scan_ativo( ativo, segundosvela, nvelas):
+    api_velas = api.get_candles(ativo, segundosvela, nvelas, datetime.now().timestamp()-60)
+    velas = []
+    for vela in api_velas:  
+        velas += [[direcao_vela(vela['open'], vela['close']), datetime.fromtimestamp(vela['from']).strftime('%H:%M')]]
+    print('--\033[95m ' + ativo + ' \033[0m--')
+    lista = estrategias.get_odds(velas)
+    estrategias.print_odds(lista)
+    return lista
+
 print('\nFARM DE DINHEIRO AUTOMATICO')
 print('\nConectando...')
 
@@ -17,20 +36,10 @@ else:
 #compra = api.buy(10000,'EURUSD','put',1)
 #print(compra)
 
-def direcao_vela(o, c):
-    if o<c:
-        return 'H'
-    elif o==c:
-        return 'N'
-    else:
-        return 'L'
+calcular_lista =  [scan_ativo('EURGBP', 60, 240)]
+calcular_lista += [scan_ativo('AUDUSD', 60, 240)]
+calcular_lista += [scan_ativo('EURUSD', 60, 240)]
+calcular_lista += [scan_ativo('EURNZD', 60, 240)]
+calcular_lista += [scan_ativo('EURGBP', 60, 240)]
 
-api_velas = api.get_candles('EURGBP',60,240,datetime.now().timestamp()-60)
-velas = []
-for vela in api_velas:  
-    velas += [[direcao_vela(vela['open'], vela['close']), datetime.fromtimestamp(vela['from']).strftime('%H:%M')]]
-odds = estrategias.get_odds(velas) 
-
-print(odds[0])
-print(odds[1])
-print(odds[2])
+#print(calcular_lista)
