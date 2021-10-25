@@ -1,6 +1,7 @@
 from datetime import date, datetime
 from iqoptionapi.stable_api import IQ_Option
-from classes import Vela
+from classes import Vela, Estrategia_c9
+
 #### FUNCOES ####
 def converter_para_velas(ativo):
     lista = []
@@ -22,3 +23,5 @@ else:
 lista_velas = converter_para_velas('EURUSD-OTC')
 for vela in lista_velas:
     vela.printar()
+
+Estrategia_c9(lista_velas).printar()
