@@ -1,0 +1,16 @@
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\Proj4.exe
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\Proj4.deps.json
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\Proj4.runtimeconfig.json
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\Proj4.runtimeconfig.dev.json
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\Proj4.dll
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\ref\Proj4.dll
+E:\GitHub\Estudos\C#\Proj4\bin\Debug\net5.0\Proj4.pdb
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.csproj.AssemblyReference.cache
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.AssemblyInfoInputs.cache
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.AssemblyInfo.cs
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.csproj.CoreCompileInputs.cache
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.dll
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\ref\Proj4.dll
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.pdb
+E:\GitHub\Estudos\C#\Proj4\obj\Debug\net5.0\Proj4.genruntimeconfig.cache

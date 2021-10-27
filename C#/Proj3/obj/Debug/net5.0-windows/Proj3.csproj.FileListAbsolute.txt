@@ -1,0 +1,16 @@
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\Proj3.exe
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\Proj3.deps.json
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\Proj3.runtimeconfig.json
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\Proj3.runtimeconfig.dev.json
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\Proj3.dll
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\ref\Proj3.dll
+E:\GitHub\Estudos\C#\Proj3\bin\Debug\net5.0-windows\Proj3.pdb
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.csproj.AssemblyReference.cache
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.AssemblyInfoInputs.cache
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.AssemblyInfo.cs
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.csproj.CoreCompileInputs.cache
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.dll
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\ref\Proj3.dll
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.pdb
+E:\GitHub\Estudos\C#\Proj3\obj\Debug\net5.0-windows\Proj3.genruntimeconfig.cache

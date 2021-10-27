@@ -1,0 +1,16 @@
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\Proj2.exe
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\Proj2.deps.json
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\Proj2.runtimeconfig.json
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\Proj2.runtimeconfig.dev.json
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\Proj2.dll
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\ref\Proj2.dll
+E:\GitHub\Estudos\C#\Proj2\bin\Debug\net5.0\Proj2.pdb
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.csproj.AssemblyReference.cache
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.AssemblyInfoInputs.cache
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.AssemblyInfo.cs
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.csproj.CoreCompileInputs.cache
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.dll
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\ref\Proj2.dll
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.pdb
+E:\GitHub\Estudos\C#\Proj2\obj\Debug\net5.0\Proj2.genruntimeconfig.cache

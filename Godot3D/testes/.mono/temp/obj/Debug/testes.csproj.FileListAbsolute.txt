@@ -1,0 +1,9 @@
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\bin\Debug\testes.dll
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\bin\Debug\testes.pdb
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.csproj.AssemblyReference.cache
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.AssemblyInfoInputs.cache
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.AssemblyInfo.cs
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.csproj.CoreCompileInputs.cache
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.dll
+E:\GitHub\Estudos\Godot3D\testes\.mono\temp\obj\Debug\testes.pdb
