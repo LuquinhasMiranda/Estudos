@@ -1,4 +1,4 @@
-#include "ChunkNetLib.h"
+#include "ChunkNetLib.hpp"
 #include <stdio.h>
 #include <stdlib.h>
 

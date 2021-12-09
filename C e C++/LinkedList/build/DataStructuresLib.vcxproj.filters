@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\C e C++\LinkedList\src\DataStructuresLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\C e C++\LinkedList\include\DataStructuresLib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\C e C++\LinkedList\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2B864601-A802-33AC-93C3-5B748B6F323E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{50AFE09D-D429-3934-8D38-C6F88A93B7FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

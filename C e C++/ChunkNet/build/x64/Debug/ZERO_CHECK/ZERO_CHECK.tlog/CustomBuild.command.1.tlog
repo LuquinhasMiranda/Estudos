@@ -1,0 +1,10 @@
+^C:\USERS\LUKIN\ONEDRIVE\DOCUMENTS\GITHUB\ESTUDOS\C E C++\CHUNKNET\BUILD\CMAKEFILES\B10E52787A82DEAD0D8ECF0ED57E419F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet" "-BC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet/build/ChunkNetDevelopment.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

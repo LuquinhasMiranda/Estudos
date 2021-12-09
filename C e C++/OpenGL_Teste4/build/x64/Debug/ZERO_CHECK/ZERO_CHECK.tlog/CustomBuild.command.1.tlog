@@ -1,0 +1,10 @@
+^C:\USERS\LUKIN\ONEDRIVE\DOCUMENTS\GITHUB\ESTUDOS\C E C++\OPENGL_TESTE4\BUILD\CMAKEFILES\2C69FE6E8A6AE97BF3B7D2F4F75285F1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/OpenGL_Teste4" "-BC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/OpenGL_Teste4/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/OpenGL_Teste4/build/OGL_TESTE.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

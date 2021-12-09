@@ -1,0 +1,3 @@
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/OpenFile - Binary/build/CMakeFiles/Application.dir
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/OpenFile - Binary/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/OpenFile - Binary/build/CMakeFiles/ZERO_CHECK.dir

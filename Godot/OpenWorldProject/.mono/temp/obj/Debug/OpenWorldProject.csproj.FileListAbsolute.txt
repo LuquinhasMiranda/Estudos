@@ -1,0 +1,9 @@
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.csproj.AssemblyReference.cache
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.AssemblyInfoInputs.cache
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.AssemblyInfo.cs
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.csproj.CoreCompileInputs.cache
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\bin\Debug\OpenWorldProject.dll
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\bin\Debug\OpenWorldProject.pdb
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.dll
+C:\Users\lukin\OneDrive\Documents\GitHub\Estudos\Godot\OpenWorldProject\.mono\temp\obj\Debug\OpenWorldProject.pdb

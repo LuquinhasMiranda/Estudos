@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ChunkNetLib.h"
+#include "ChunkNetLib.hpp"
 
 using namespace std;
 
@@ -21,5 +21,6 @@ int main()
 
     net.Limpar();
 
+    scanf("%d");
     return 0;
 }

@@ -1,0 +1,4 @@
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet/build/CMakeFiles/ChunkNetLib.dir
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet/build/CMakeFiles/ChunkNet.dir
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/ChunkNet/build/CMakeFiles/ZERO_CHECK.dir

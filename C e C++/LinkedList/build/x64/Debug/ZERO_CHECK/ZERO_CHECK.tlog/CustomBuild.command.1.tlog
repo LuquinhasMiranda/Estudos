@@ -1,0 +1,10 @@
+^C:\USERS\LUKIN\ONEDRIVE\DOCUMENTS\GITHUB\ESTUDOS\C E C++\LINKEDLIST\BUILD\CMAKEFILES\46B2867495CB05202E83EEABF03A7EE6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList" "-BC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList/build/LinkedListProj.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
