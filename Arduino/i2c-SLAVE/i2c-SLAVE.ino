@@ -14,6 +14,6 @@ void loop() {
 
 void Receber(int qnt) {
   while(Wire.available()>0 ) { 
-    Serial.print(char(Wire.read())); 
+    Serial.print(int(Wire.read())); 
   }
 }

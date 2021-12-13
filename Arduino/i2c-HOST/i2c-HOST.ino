@@ -8,7 +8,7 @@ void setup() {
 
 void loop() {
   Wire.beginTransmission(0x100);
-  Wire.print("TESTE");
+  Wire.print(char(1));
   Wire.endTransmission();
   delay(2000);
 }

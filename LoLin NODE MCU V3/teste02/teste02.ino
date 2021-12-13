@@ -41,17 +41,15 @@ delay(1); //INTERVALO DE 1 MILISEGUNDO
 }
 String request = client.readStringUntil('\r'); //FAZ A LEITURA DA PRIMEIRA LINHA DA REQUISIÇÃO
 Serial.println(request); //ESCREVE A REQUISIÇÃO NA SERIAL
+Serial.println(request[5]);
 client.flush(); //AGUARDA ATÉ QUE TODOS OS DADOS DE SAÍDA SEJAM ENVIADOS AO CLIENTE
  
-client.println("HTTP/1.1 200 OK"); //ESCREVE PARA O CLIENTE A VERSÃO DO HTTP
+client.println("HTTP/1.1 OK"); //ESCREVE PARA O CLIENTE A VERSÃO DO HTTP
 client.println("Content-Type: text/html"); //ESCREVE PARA O CLIENTE O TIPO DE CONTEÚDO(texto/html)
 client.println("");
 client.println("<!DOCTYPE HTML>"); //INFORMA AO NAVEGADOR A ESPECIFICAÇÃO DO HTML
 client.println("<html>"); //ABRE A TAG "html"
-client.println("<h1><center>Ola cliente!</center></h1>"); //ESCREVE "Ola cliente!" NA PÁGINA
+client.println("<h1><center>Ola macaco!</center></h1>"); //ESCREVE "Ola cliente!" NA PÁGINA
 client.println("<center><font size='5'>Seja bem vindo!</center>"); //ESCREVE "Seja bem vindo!" NA PÁGINA
 client.println("</html>"); //FECHA A TAG "html"
-delay(1); //INTERVALO DE 1 MILISEGUNDO
-Serial.println("Cliente desconectado"); //ESCREVE O TEXTO NA SERIAL
-Serial.println(""); //PULA UMA LINHA NA JANELA SERIAL
 }
