@@ -1,0 +1,10 @@
+^C:\USERS\LUKIN\ONEDRIVE\DOCUMENTS\GITHUB\ESTUDOS\C E C++\MULTITHREADING\BUILD\CMAKEFILES\3FF19FE7A267301269F48C599997CA2D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/MultiThreading" "-BC:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/MultiThreading/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/MultiThreading/build/MultiThread.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
