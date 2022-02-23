@@ -1,0 +1,32 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<div id="page" class="page"></div>
+
+<script src="auxclasses/block.js"></script>
+<script src="sudoku_controller.js"></script>
+<script src="sudoku_view.js"></script>
+<script src="sudoku_model.js"></script>
+<script>
+
+sdk = getController()
+sdk2 = getController()
+
+sdk.createSudoku()
+sdk.createSudoku()
+
+let data =          [[ 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+let data2 = "012345678012345678012345678012345678012345678012345678012345678012345678012345678"
+
+sdk.setFixNumbers(data, 0)
+sdk.setFixNumbers(data2, 1)
+
+console.log(sdk === sdk2)
+
+</script>
