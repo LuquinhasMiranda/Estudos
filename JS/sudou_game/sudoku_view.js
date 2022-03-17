@@ -30,7 +30,7 @@ class SudokuView {
                         
                         let numberHTML = document.createElement("input")
                         numberHTML.type = "number"
-                        numberHTML.min = 1
+                        numberHTML.min = 0
                         numberHTML.max = 9
                         numberHTML.className = "numberLock"
                         numberHTML.id = 'n' + idHTML
