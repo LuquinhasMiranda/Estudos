@@ -8,10 +8,7 @@ void setup() {
 bool sw = false;
 void loop() {
   Wire.beginTransmission(0x100);
-  sw = !sw;
-  if (sw) Wire.print(1);
-  else Wire.print(0);
-  
+  Wire.write('t');
   Wire.endTransmission();
-  delay(2000);
+  delay(150);
 }
