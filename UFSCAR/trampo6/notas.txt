@@ -1,0 +1,7 @@
+::CORRECAO::
+
+LINHA 1 -> para declarar uma funcao devemos adicionar ":" depois dos argumentos.
+
+LINHA 13 -> uma vez que estamos partindo da ponta da direita, devemos diminuir o indice e nao aumentar
+
+LINHA 20 -> devemos achar a distancia do centro do espaço na fileira, assim dividimos por 2 e arredondamos para baixo.

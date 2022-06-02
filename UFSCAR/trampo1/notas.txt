@@ -1,0 +1,13 @@
+::CORRECAO::
+
+LINHA 02  -> "read" nao eh uma variavel e sim uma funcao, assim deve conter
+			 parenteses para funcionar, mesmo que nao recebam argumentos.
+
+LINHA 12-17  -> as linhas devem estar identadas de tal forma que nao fiquem 
+				dentro da validacao "horizontal" e sim no loop de caracteres da linha
+
+LINHA 14  ->  os indices "i" devem ser movidos 1 unidade a mais pois 
+			  "WALLY" tem 5 posicoes
+
+LINHA 15  ->  os parametros do comando print devem estar entre parenteses 
+			  pois eh uma funcao

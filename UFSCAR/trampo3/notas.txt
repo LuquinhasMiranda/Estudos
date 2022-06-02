@@ -1,0 +1,14 @@
+::CORRECAO::
+
+LINHA 1 -> Input nao deve ser convertido para inteiro, portanto nao usa "int()"
+
+LINHA 4 -> o indice "i" deve comecar com 0 pois o comeco dos arrays tem indice 0
+
+LINHA 9 -> 'i+1' para formatar a resposta solicitada
+
+LINHA 10 -> ":" no final da condicao 
+LINHA 10 -> WALLY tem 5 letra entao deve prever o indice "i+4"
+
+LINHA 14 -> o indice precisa comecar do 0 e nao do 1
+
+LINHA 15 -> "==" pois estamos trabalhando com uma comparacao

@@ -1,4 +1,0 @@
-C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList/build/CMakeFiles/DataStructuresLib.dir
-C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList/build/CMakeFiles/DataStructuresApp.dir
-C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/lukin/OneDrive/Documents/GitHub/Estudos/C e C++/LinkedList/build/CMakeFiles/ZERO_CHECK.dir

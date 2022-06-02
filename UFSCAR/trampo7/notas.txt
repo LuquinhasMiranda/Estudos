@@ -1,0 +1,7 @@
+::CORRECAO::
+
+LINHA 1 -> para declarar uma funcao usamos "def"
+
+LINHA 5 -> devemos diminuir 1 pois o indice eh zero-based
+
+LINHA 20 -> devemos passar o parametro da funcao solve, neste caso o array com os numeros "nums"

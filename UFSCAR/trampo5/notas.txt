@@ -1,0 +1,13 @@
+::CORRECAO::
+
+LINHA 3 -> A funcao range deve comecar em 0 e nao em 1 pois queremos que o loop replique 
+           4 vezes.
+
+LINHA 6 -> A variavel price contem valor matematico, assim deve ser convertida em INTEGER
+
+LINHA 8-10 -> As linhas 8 e 10 estao invertidas, pois caso "phone" nao exista em "dic", 
+              deve ser adicionado com apenas um "price", e caso phone ja exista, deve 
+              adicionar outro "price" a lista "phone"
+
+LINHA 21 -> devemos usar apenas um IF com duas condicoes que devem ser atendidas, 
+            assim usamos AND ao lista-las

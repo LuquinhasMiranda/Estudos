@@ -1,0 +1,9 @@
+::CORRECOES::
+
+LINHA 1 -> Converter o input string para inteiro com "int()"
+
+LINHA 10 -> Aumentar o index de "i" para "i+1" e tambem seu valor para "i+1"
+
+LINHA 15 -> Adicionar "NOT" para inverter a comparacao, assim verificando quando nao existe "x" em "cnt"
+
+LINHA 20 -> para comparar usamos "=="

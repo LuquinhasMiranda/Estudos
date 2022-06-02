@@ -1,0 +1,6 @@
+::CORRECAO::
+
+LINHA 4 -> convertemos o input para inteiro, assim descartamos os zeros iniciais,
+           depois convertemos de volta para string para ler individualmente cada caracter
+
+LINHA 10 -> usamos "==" quando estamos comparando valores
