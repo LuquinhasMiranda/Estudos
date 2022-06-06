@@ -46,3 +46,5 @@ bot.setMenuDefault("/menu");
 
 // TELEAMIGO_BOT TOKEN
 bot.start('1754600796:AAGxsM7AK3F3_o4ktRiGkMr0AXDn1UOBnAE');
+
+//
